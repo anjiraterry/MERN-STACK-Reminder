@@ -1,0 +1,23 @@
+{
+  "name": "mern-stack",
+  "version": "1.0.0",
+  "description": "mernstack web app",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && cd pr3ssctrl && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && cd pr3ssctrl && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Anjira Terry",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.3.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.3",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14"
+  }
+}
